@@ -13,17 +13,17 @@ class MyStack[A](elems: List[A]) {
     * @param elem - the element to push on the stack.
     * @return - the stack with the new element on top.
     */
-  def push(elem: A): MyStack[A] = {
-    new MyStack(elem :: elems)
+  def push(elem: A): List[A] = {
+    elem :: elems
   }
 
   /**
     * Removes the top element from the stack.
     * @return - the new stack without the former top element.
     */
-  def pop: MyStack[A] = {
+  def pop: List[A] = {
     if(!isEmpty) {
-      new MyStack(elems.tail)
+      elems.tail
     }
     else {
       throw new NoSuchElementException("pop of empty stack")
