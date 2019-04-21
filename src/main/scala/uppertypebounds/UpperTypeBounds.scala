@@ -28,6 +28,6 @@ object UpperTypeBounds extends App {
   val catContainer = new PetContainer[Cat](new Cat)
 
   // this would not compile
-  val lionContainer = new PetContainer[Lion](new Lion)
+//  val lionContainer = new PetContainer[Lion](new Lion)
 
 }

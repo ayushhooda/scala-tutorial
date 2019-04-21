@@ -9,6 +9,7 @@ class SuperType extends Type[AnyVal]{
   override def typeName(): Unit = {
     print("\n\n SuperType \n\n")
   }
+
 }
 
 class SubType extends Type[Int]{
@@ -16,14 +17,15 @@ class SubType extends Type[Int]{
   override def typeName(): Unit = {
     print("\n\n SubType \n\n")
   }
+
 }
 
 class TypeCarer{
 
-  Seq
   def display(t: Type[Int]){
     t.typeName()
   }
+
 }
 
 object ScalaContravarianceTest {

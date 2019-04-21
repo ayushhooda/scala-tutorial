@@ -32,3 +32,16 @@ class Tricycle extends Bicycle
 
 class Parking[A >: Bicycle <: Vehicle](val plaza: A)
 
+object LowerTypeBounds extends App {
+
+  // this won't compile
+//  val parking1 = new Parking[AnyRef](new AnyRef)
+
+  // this will compile
+  val parking2 = new Parking[Bicycle](new Bicycle)
+
+  // this won't compile
+//  val parking3 = new Parking[Thing](new Thing{})
+
+
+}

@@ -19,6 +19,8 @@ class Container[A](value: A) {
 object Invariance {
 
   val catContainer: Container[Cat] = new Container[Cat](Cat("tom"))
+
+  // This won't compile
 //  val animalContainer: Container[Animal] = catContainer
 
 }
